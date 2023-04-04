@@ -27,13 +27,13 @@
             "type": "image/jpeg"
         }
     ],
-    "background_color": "#af0a1a",
-    "theme_color": "#af0a1a",
+    "background_color": "#49A5B0",
+    "theme_color": "#49A5B0",
     "display": "standalone",
     "orientation": "any",
     "start_url": ".",
     "url": "index.html",
     "scope": ".",
-    "lang": "fa-IR",
+    "lang": "PT-BR",
     "dir": "rtl"
 }
