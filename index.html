@@ -18,17 +18,41 @@
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" >
     <script type='text/javascript' src="js/main.js"></script>
+    <script type='text/javascript' src="js/jquery.min.js"></script>
 </head>
 <body>
     <div class="content">
+
+        <div class="modal fade" id="modalMensagem" tabindex="-1" role="dialog" aria-labelledby="modalMensagem" aria-hidden="true" data-backdrop="static" data-keyboard="false">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Mensagem</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <span id="txtTextoMensagem">
+                        Lorem Ipsum is simply
+                    </span>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Close</button>                    
+                </div>
+                </div>
+            </div>
+        </div>
+
         <img src="img/fav-192.png" alt="Red Cherry">
         <h1>Red Cherry is here :)</h1>
         <a href="https://redcherry.ir">redcherry.ir</a>
     </div>
     <div class="w-100 text-center">
-        <button class="btn btn-primary">Teste</button>
+        <button id="btnModal" class="btn btn-primary">Clique aqui</button>
     </div>
 
+    <script src="js/site.events.js"></script>
+    <script src="js/site.functions.js"></script>
+    
     <script src="js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
