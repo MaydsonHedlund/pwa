@@ -67,25 +67,25 @@ a {
 }
 
 .menu-deactivate{
-    color: white;
+    color: #81d4fa;
 }
 
 .menu-activate{
-    color: #212121;
+    color: #eeeeee;
     
 }
 
 .heading {
-    border-bottom: 4px solid #212121;
+    border-bottom: 4px solid #eeeeee;
     width:50%;
  }
 
  i:hover {
-    color: #212121;
+    color: #eeeeee;
   }
 
   .row a:hover {
-    color:#212121;
+    color:#eeeeee;
   }
 
 
