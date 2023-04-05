@@ -67,25 +67,25 @@ a {
 }
 
 .menu-deactivate{
-    color: #bdbdbd;
+    color: white;
 }
 
 .menu-activate{
-    color: #000;
+    color: #212121;
     
 }
 
 .heading {
-    border-bottom: 4px solid #000;
+    border-bottom: 4px solid #212121;
     width:50%;
  }
 
  i:hover {
-    color: #000;
+    color: #212121;
   }
 
   .row a:hover {
-    color:#000;
+    color:#212121;
   }
 
 
@@ -135,9 +135,10 @@ a {
 
 .navbar-header{
     padding-left: 10px !important;
-    background-color: #e0e0e0;
+    background-color: #49A5B0;
+    
 }
 
 .menu-bottom{
-    background-color: #e0e0e0;
+    background-color: #49A5B0;
 }
