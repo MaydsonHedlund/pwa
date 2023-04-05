@@ -17,6 +17,18 @@
     <link rel="manifest" href="pwa-manifest.json">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" >
+
+
+    <link rel="stylesheet" href="icons/css/line-awesome.css">
+    <link rel="stylesheet" href="icons/css/line-awesome.min.css">
+
+
+    <link href="css/fontawesome-free-6.4.0-web/css/fontawesome.css" rel="stylesheet">
+    <link href="css/fontawesome-free-6.4.0-web/css/brands.css" rel="stylesheet">
+    <link href="css/fontawesome-free-6.4.0-web/css/solid.css" rel="stylesheet">
+
+
+
     <script type='text/javascript' src="js/main.js"></script>
     <script type='text/javascript' src="js/jquery.min.js"></script>
 
@@ -24,6 +36,7 @@
         body {
           padding-bottom: 60px;
         }
+
         .navbar-fixed-bottom {
           position: fixed;
           bottom: 0;
@@ -66,18 +79,15 @@
 
 
     <!-- Footer -->
-<footer class="text-center text-lg-start bg-white text-muted navbar-fixed-bottom">
-      
-    <div class="d-flex justify-content-around">
-        <div class="p-2"><a href="#"><img src = "img/icons8-home.svg" alt="My Happy SVG"/></a></div>
-        <div class="p-2"><a href="#"><img src = "img/icons8-search.svg" alt="My Happy SVG"/></a></div>
-        <div class="p-2"><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAACUElEQVR4nO2ZPWtUQRSGn9WAEsS0foUQNRo/QCTY5A8YCaKVnaCSqBERCQh2VoKNjQgWFhqMJhJEghEri5hSrGwUAgG/BRcNgkXErBx4L1wk7JJ1ztw7kAem2b3znvMus3PPmYEVykc/8AGo1RnfgRfACaBCSfnYwMS/Y7SsZt7nkny3xPeW9CZgEPip545TQg7JjJnoa/DsaRl5ReKsAb7JzC4SZ1RGhkicQRkZJ3F2yMjXsu5ezWzZ3STOAxk5S+KckZExEqdbRj6v/E9KxPgyazSPMRPCyFAJjMyGMLI79z+JzV3FvhJCzF6GXyS4k3isUxW+CGwNJTohI1YVx+KUYj4PKXpeoveJx4xHT7RXop+IQ5eW1DzQGlK4ouKxpiDeXFWs2x7ijyQ+gC+r1MVarF6PABckfg9fDirOW6+yaJ8CWN8fo5K47BWgkuvjtznFaAN+AX+Adhx5LCO2x3twTvrPcOaiAo046b+U/jGc2V/ngO9/2SPtKrCWCFtjVQE7A2tfl+5NIjGpgHbQHYoWVdem20MkhhXwTkDNI9J8TUR6FHTOYTccJiKrdY8Sugv8DWwgMk8Cm1gEblAAl5TALRLngIy8IXFa1PTUdMuVNJMycpLEGZCRaRJnfa5cuQZ0aGtOkqPAQsBteLpIM4cDGlkANhZlZERJ2Etys8ZUg3uVsTpz7BK2ELKq1ZLJaM/1FktRrTPnBwWRvU+2LCOp+SbmuJOdd00pMRtP9dlEwDlRrrGz05X8sOWzPeAcYmBr/aGWjA37VRsl1Mwc/gIXmFSH9pqNAQAAAABJRU5ErkJggg=="></a></div>
-        <div class="p-2"><a href="#"><img src="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAADIAAAAyCAYAAAAeP4ixAAAACXBIWXMAAAsTAAALEwEAmpwYAAAE+0lEQVR4nM2Za4hVVRTHfzOalVY2TiE9jDB7aYNBQVYQEZgNEZhED8M+mEhWVAylaV/KyvGLltCTICQQzR5aQmijUEZpHyJ7akN96GH0tNGsnFHnxpL/hu3l3nPWPnPm8YcDF+5/r7P32Wuv9V9rQ3k4AWgFlgIbgF3AHqBHj/3eCbwNtItrY4YEGjShtcABoJL4/Ae8ClwnW4OCm4DPokkdAj4EngBmABOBJuAYPfZ7kv57EvhIY8L4HfpvwDAB6Igm8D3wEHB6AVtnAPOBHyJ7m4Bz6GfMBPbphb8Cc/S1+4oRwFzgd9neC9xCP6BBLhO+2itylbIxBlgVvWdx2Yt4Voa7gdn0P+Yq0tk7nynLaNiJ/cC0hHN0O/AYsAJYDiwCrgGGO220Av+UtTMzo53IW8Qw7daXOSH3W+CqhMX0aFzhMzMhOth57nSawmmY7G7llqeANj22M9/o/3/lrlc43ayiADC+yEI6ooOdhZOjCXYC12ckt0ZgWdUOrQFG5rxjlbgbiyS7EGLzotNKcT8BRjtsNypZPgD8prFv5oxpjkLzdO8iGqKMbXkiC2cpOx8EJpOO8dJgFcmULNwl3qdeOdMaZey8ZHe3uG9QHI9GLpaXNH8U1xU914ps0iEP68S9k+K4UDa+c3AfFnd1HvFEKdJDTu20XYanUBzDpJx7HYd+HHBYUW+kx61MxXrQKb591b6gS3aaHNyPxb02i7RUJMvmHuwU/3z6hpDBT3Jw28VdkkXaINKNzgm8L743U9cTikECpaSG9VmkkNisAPJgjfi3UhyXycbnTv5F4ps31MWfItlX8mCR+LbdRfGgbDzv5J8iviXIuugWyWK2B9PE30JxBHc2gerBseJbpKuLnsSFhCi3L0GexxgRRSzTaN4xuQv5KyEMGt4Tf0HBLoiNWSgbm51jmsX/I4u0K/Gwh/BbRGcFTJaNr5z8FvG/ziK9kxh+X3PWK1mYIxsmjTyYIf5bWaQliVHojkhgWvGUijaNNRuznGPaPUn7BpG2Jeik16WT9qrW8KJRY4J6NlsebNOYqVmkURJkvRJoMe7Xoa6FHYlnK/b1zMRWhTMlGvc7BOaRas1e8EiN0GyquBZWePRPHRd5IWHMfK+Mj5Pc7qp8EmrsWrhE/1m1d6rjHWMiFXGlbw3EhVWmW8W+G1o6Vld7FoJEXEW5xWJ9Vs2zSVxrcHgxLyp13Qghzr7aWOdCrCH9i6PQukCcroRmdVPUqLCAlJRxN1d1OPIWgjopxrk8gzMxobQNWB116gs16P6WgTbnQr5w7Eio0c3fSWjQdQFnUxC3ychB50JC6WuhtR7GiWOukoerFS17U1qmC6pukOo99TBW8b1SIwfFGK2Jdasv5nGpxSTG6KILaYmaehsTWk6WDC/NSYDTB+J+cZIqu1DHdKqhnYfmKMTbx3sZuJgBxnCF5y1ykYpkw0o1tL2wfPKSxobd/gC4uaTrvLo4Drg3UqsVtXFeVEOgKCyKPRedrwrwk7Td8SXO/4h/zpZkCS8yt7iv5HtECwL3VF15/6x6pc9nZJQKmGB4u6NrXgamVl0crddcCsG6FVuj+rhfrotzMCtyua0JTZGj8HSUgc9j8NASqV677UrCucrmh9UJHGxM0Vx6JJ3ceFxf4F2GDjo0J7vydiO07q0GGCqYFwUcN0Kjbig+e7yLsCQ02JPNeyw5H4X/AZVKDBMqBXwkAAAAAElFTkSuQmCC"></a></div>
-      </div>
-
-    <!-- Section: Links  -->
-    
-  </footer>
+    <footer class="navbar-fixed-bottom">      
+    <div class="navbar-fixed-bottom d-flex justify-content-around text-white bg-dark ">
+        <div class="mb-1 mt-2"><a href="#"><i class="text-white fa-2x las la-home"></i></a></div>        
+        <div class="mb-1 mt-2"><a href="#"><i class="text-white fa-2x las la-gift"></i></a></div>
+        <div class="mb-1 mt-2"><a href="#"><i class="text-white fa-2x las la-shopping-cart"></i></a></div>        
+        <div class="mb-1 mt-2"><a href="#"><i class="text-white fa-2x lar la-credit-card"></i></a></div>
+        <div class="mb-1 mt-2"><a href="#"><i class="text-white fa-2x las la-cog"></i></a></div>        
+    </div>
+    </footer>
   <!-- Footer -->
 
 
