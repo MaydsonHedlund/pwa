@@ -61,3 +61,21 @@ a {
 .fs-55{
     font-size: 55px !important;
 }
+
+.bg-menu-footer{
+    background-color: #eeeeee;
+}
+
+.menu-deactivate{
+    color: #9e9e9e;
+}
+
+.menu-activate{
+    color: #000;
+    
+}
+
+.heading1 {
+    border-bottom: 5px solid #000;
+    width:100%;
+ }

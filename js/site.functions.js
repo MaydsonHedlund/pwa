@@ -10,10 +10,4 @@ _SITE_.AbrirModalSite = function (params) {
     }
 }
 
-_SITE_.LoadPartial = function (params) {    
-    try {        
-        console.log(params)
-    } catch (error) {    
-        console.log(error)
-    }
-}
+

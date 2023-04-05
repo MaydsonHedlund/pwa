@@ -1,33 +1,4 @@
 
-
-//function handleFile(files){
-//    const reader = new FileReader();
-//    reader.onload = (event) => {
-//        let data = event.target.result;
-//        document.querySelector("#texto").value = data; 
-//    };
-//    reader.readAsText(files[0]);
-//}
-//
-//
-//function LoadPartial(params) {    
-//    try {        
-//        
-//        //var body = document.getElementsByClassName(".render-body");
-//        //body.innerHTML = "teste";
-//        //console.log(body);
-//        $('.render-body').load('modalMensagem.html');
-//    } catch (error) {    
-//        console.log(error)
-//    }
-//}
-
-//window.addEventListener('load',
-//
-//);
-
-
-
 const _BTN_MODAL_MENSAGEM_  = document.getElementById("btnModal");
 
 
@@ -38,4 +9,32 @@ document.addEventListener("DOMContentLoaded", function (event) {
         _SITE_.AbrirModalSite("Olá Mundo");
     });
 
+    var menuFooter = document.getElementsByClassName("menu-footer");
+
+    var myFunction = function(element) {
+        //var attribute = this.getAttribute("data-myattribute");
+        alert(element);
+    };
+
+    for (var i = 0; i < menuFooter.length; i++) {
+        
+        menuFooter[i].addEventListener('click', function() {
+            
+    
+            for (var i = 0; i < menuFooter.length; i++) {        
+                menuFooter[i].classList.remove("menu-activate");
+                menuFooter[i].classList.remove("heading1");
+                menuFooter[i].classList.add("menu-deactivate");
+            }
+            
+            
+            this.classList.add("menu-activate");
+            this.classList.add("heading1");
+            //console.log(menuFooter.classList.c);
+            //alert(this.classList.contains("foo"));
+            //menuFooter.classList.add("menu-deactivate");
+        });
+
+
+    }
 });
