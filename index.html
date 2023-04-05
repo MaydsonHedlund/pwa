@@ -45,6 +45,65 @@
       </style>
 </head>
 <body>
+
+    <div id="Home" class="tabcontent">
+        <nav class="navbar navbar-light navbar-header bg-dark">
+            <span class="navbar-brand mb-0 h1 text-white">Home</span>
+        </nav>
+        <div class="content">
+            <p>Tela Home</p>
+        </div>
+        
+
+        <div class="w-100 text-center">
+            <button id="btnModal" class="btn btn-primary">Clique aqui</button>
+        </div>
+
+      </div>
+      
+      <div id="Produto" class="tabcontent">
+        <nav class="navbar navbar-light navbar-header bg-dark">
+            <span class="navbar-brand mb-0 h1 text-white">Produtos</span>
+        </nav>
+        <div class="content">
+            <p>Tela Produtos</p>
+        </div>
+      </div>
+      
+      <div id="Venda" class="tabcontent">
+        <nav class="navbar navbar-light navbar-header bg-dark">
+            <span class="navbar-brand mb-0 h1 text-white">Venda</span>
+        </nav>
+        <div class="content">
+            <p>Tela Venda</p>
+        </div>
+      </div>
+      <div id="Pagamento" class="tabcontent">
+        <nav class="navbar navbar-light navbar-header bg-dark">
+            <span class="navbar-brand mb-0 h1 text-white">Pagamento</span>
+        </nav>
+        <div class="content">
+            <p>Tela Pagamento</p>
+        </div>
+      </div>
+      <div id="Configuracao" class="tabcontent">
+        <nav class="navbar navbar-light navbar-header bg-dark">
+            <span class="navbar-brand mb-0 h1 text-white">Configuração</span>
+        </nav>
+        <div class="content">
+            <p>Tela Configuração</p>
+        </div>
+      </div>
+      <div id="Perfil" class="tabcontent">
+        <nav class="navbar navbar-light navbar-header bg-dark">
+            <span class="navbar-brand mb-0 h1 text-white">Perfil</span>
+        </nav>
+        <div class="content">
+            <p>Tela Perfil</p>
+        </div>
+      </div>
+
+
     <div class="content">
         
         <div class="modal fade" id="modalMensagem" tabindex="-1" role="dialog" aria-labelledby="modalMensagem" aria-hidden="true" data-backdrop="static" data-keyboard="false">
@@ -66,28 +125,29 @@
             </div>
         </div>
 
-
-        <div class="w-100 text-center">
-            <button id="btnModal" class="btn btn-primary">Clique aqui</button>
-        </div>
-    
         
+          
+          
+
+
+
+    
         <div class="fixed-bottom bg-dark">
             <div class="row">
-                <a class="col-home menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-activate"><i class="text-center fs-35 las la-home"></i></a>
-                <a class="col-product menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-deactivate"><i class="text-center fs-35 las la-gift"></i></a>
-                <a class="col-cart menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-deactivate"><i class="text-center fs-35 las la-shopping-cart"></i></a>
-                <a class="col-payment menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-deactivate"><i class="text-center fs-35 lar la-credit-card"></i></a>
-                <a class="col-settings menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-deactivate"><i class="text-center fs-35 las la-cog"></i></a>
-                <a class="col-user menu-footer col p-0 m-0 mb-2 mt-1 text-center menu-deactivate"><i class="text-center fs-35 las la-user"></i></a> 
+                <a class="col-home menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-activate" onclick="openCity(event, 'Home')"><i class="text-center fs-35 las la-home"></i></a>
+                <a class="col-product menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Produto')"><i class="text-center fs-35 las la-gift"></i></a>
+                <a class="col-cart menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Venda')"><i class="text-center fs-35 las la-shopping-cart"></i></a>
+                <a class="col-payment menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Pagamento')"><i class="text-center fs-35 lar la-credit-card"></i></a>
+                <a class="col-settings menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Configuracao')"><i class="text-center fs-35 las la-cog"></i></a>
+                <a class="col-user menu-footer col p-0 m-0 mb-2 mt-1 text-center menu-deactivate" onclick="openCity(event, 'Perfil')"><i class="text-center fs-35 las la-user"></i></a> 
             </div>
             <div class="row">
-                <div class="col-home-heading col menu-footer heading"></div>
-                <div class="col-product-heading col menu-footer"></div>
-                <div class="col-cart-heading col menu-footer"></div>
-                <div class="col-payment-heading col menu-footer"></div>
-                <div class="col-settings-heading col menu-footer"></div>
-                <div class="col-user-heading col menu-footer"></div>                
+                <div class="col-home-heading col menu-footer heading" onclick="openCity(event, 'Home')"></div>
+                <div class="col-product-heading col menu-footer" onclick="openCity(event, 'Produto')"></div>
+                <div class="col-cart-heading col menu-footer" onclick="openCity(event, 'Venda')"></div>
+                <div class="col-payment-heading col menu-footer" onclick="openCity(event, 'Pagamento')"></div>
+                <div class="col-settings-heading col menu-footer" onclick="openCity(event, 'Configuracao')"></div>
+                <div class="col-user-heading col menu-footer" onclick="openCity(event, 'Perfil')"></div>                
             </div>
                 
         </div>
