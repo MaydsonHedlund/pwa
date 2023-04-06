@@ -63,29 +63,29 @@ a {
 }
 
 .bg-menu-footer{
-    background-color: #eeeeee;
+    background-color: #fff;
 }
 
 .menu-deactivate{
-    color: #81d4fa;
+    color: #B0BEC5;
 }
 
 .menu-activate{
-    color: #eeeeee;
+    color: #fff;
     
 }
 
 .heading {
-    border-bottom: 4px solid #eeeeee;
+    border-bottom: 4px solid #fff;
     width:50%;
  }
 
  i:hover {
-    color: #eeeeee;
+    color: #fff;
   }
 
   .row a:hover {
-    color:#eeeeee;
+    color:#fff;
   }
 
 
@@ -135,7 +135,7 @@ a {
 
 .navbar-header{
     padding-left: 10px !important;
-    background-color: #49A5B0;
+    background-color:#49A5B0;
     
 }
 
