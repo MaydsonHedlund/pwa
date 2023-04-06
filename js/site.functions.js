@@ -24,3 +24,11 @@ function openCity(evt, cityName) {
     document.getElementById(cityName).style.display = "block";
     evt.currentTarget.className += " active";
   }
+
+  function EfetuarLogin(params) {
+    try {
+      window.location.href="index.html"
+    } catch (error) {
+        console.log(error)
+    }
+  }
