@@ -1,7 +1,7 @@
 {
-    "name": "RedCherrys",
-    "short_name": "RedCherrys",
-    "description": "RedCherry Simple PWA",
+    "name": "SmartCommerceMobile",
+    "short_name": "SmartCommerceMobile",
+    "description": "SmartCommerceMobile PWA",
     "icons": [
         {
             "src": "img/fav-192.png",
