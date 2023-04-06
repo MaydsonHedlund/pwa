@@ -32,7 +32,7 @@
     "display": "standalone",
     "orientation": "any",
     "start_url": ".",
-    "url": "login.html",
+    "url": "index.html",
     "scope": ".",
     "lang": "PT-BR",
     "dir": "rtl"

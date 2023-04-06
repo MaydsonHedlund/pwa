@@ -27,7 +27,7 @@ function openCity(evt, cityName) {
 
   function EfetuarLogin(params) {
     try {
-      window.location.href="index.html"
+      window.location.href="app.html"
     } catch (error) {
         console.log(error)
     }

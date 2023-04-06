@@ -32,133 +32,56 @@
     <script type='text/javascript' src="js/main.js"></script>
     <script type='text/javascript' src="js/jquery.min.js"></script>
 
-    <style>
-        body {
-          padding-bottom: 60px;
-        }
-
-        .navbar-fixed-bottom {
-          position: fixed;
-          bottom: 0;
-          width: 100%;
-        }
-      </style>
+   
 </head>
-<body>
-
-    <div id="Home" class="tabcontent">
-        <nav class="navbar navbar-light navbar-header">
-            <span class="navbar-brand mb-0 h1 text-white">Home</span>
-        </nav>
-        <div class="content">
-            <p>Tela Home</p>
-        </div>
-        
-
-        <div class="w-100 text-center">
-            <button id="btnModal" class="btn btn-secondary">Clique aqui</button>
-        </div>
-
-      </div>
-      
-      <div id="Produto" class="tabcontent">
-        <nav class="navbar navbar-light navbar-header">
-            <span class="navbar-brand mb-0 h1 text-white">Produtos</span>
-        </nav>
-        <div class="content">
-            <p>Tela Produtos</p>
-        </div>
-      </div>
-      
-      <div id="Venda" class="tabcontent">
-        <nav class="navbar navbar-light navbar-header">
-            <span class="navbar-brand mb-0 h1 text-white">Venda</span>
-        </nav>
-        <div class="content">
-            <p>Tela Venda</p>
-        </div>
-      </div>
-      <div id="Pagamento" class="tabcontent">
-        <nav class="navbar navbar-light navbar-header">
-            <span class="navbar-brand mb-0 h1 text-white">Pagamento</span>
-        </nav>
-        <div class="content">
-            <p>Tela Pagamento</p>
-        </div>
-      </div>
-      <div id="Configuracao" class="tabcontent">
-        <nav class="navbar navbar-light navbar-header">
-            <span class="navbar-brand mb-0 h1 text-white">Configuração</span>
-        </nav>
-        <div class="content">
-            <p>Tela Configuração</p>
-        </div>
-      </div>
-      <div id="Perfil" class="tabcontent">
-        <nav class="navbar navbar-light navbar-header">
-            <span class="navbar-brand mb-0 h1 text-white">Perfil</span>
-        </nav>
-        <div class="content">
-            <p>Tela Perfil</p>
-        </div>
-      </div>
-
-
-    <div class="content">
-        
-        <div class="modal fade" id="modalMensagem" tabindex="-1" role="dialog" aria-labelledby="modalMensagem" aria-hidden="true" data-backdrop="static" data-keyboard="false">
-            <div class="modal-dialog modal-dialog-centered">
-                <div class="modal-content">
-                <div class="modal-header">
-                    <h5 class="modal-title text-center w-100">Mensagem</h5>
-                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <span id="txtTextoMensagem">
-                        Lorem Ipsum is simply
-                    </span>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-primary" data-bs-dismiss="modal">Fechar</button>                    
-                </div>
-                </div>
-            </div>
-        </div>
-
-        
-          
-          
-
-
+<body style="background-image: url('@Url.Content("/img/background.jpg")'); background-size: 100% auto; background-repeat: no-repeat; background-color: #49A5B0;">
 
     
-        <div class="fixed-bottom menu-bottom">
-            <div class="row">
-                <a class="col-home menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-activate" onclick="openCity(event, 'Home')"><i class="text-center fs-35 las la-home"></i></a>
-                <a class="col-product menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Produto')"><i class="text-center fs-35 las la-gift"></i></a>
-                <a class="col-cart menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Venda')"><i class="text-center fs-35 las la-shopping-cart"></i></a>
-                <a class="col-payment menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Pagamento')"><i class="text-center fs-35 lar la-credit-card"></i></a>
-                <a class="col-settings menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Configuracao')"><i class="text-center fs-35 las la-cog"></i></a>
-                <a class="col-user menu-footer col p-0 m-0 mb-2 mt-1 text-center menu-deactivate" onclick="openCity(event, 'Perfil')"><i class="text-center fs-35 las la-user"></i></a> 
+    <section class="vh-100" style="background-color: #49A5B0;">
+        
+
+        <div class="container py-5 h-100">
+          <div class="row d-flex justify-content-center align-items-center h-100">
+            <div class="col-12 col-md-8 col-lg-6 col-xl-5">
+              <div class="card shadow-2-strong" style="border-radius: 1rem;">
+                <div class="card-body p-5 text-center">
+      
+                  <h3 class="mb-5">SmartCommerceMobile</h3>
+      
+                  <form id="loginForm" action="javascript:EfetuarLogin();" method="post">
+                    <div class="form-group input-group mb-3">
+                        <input id="username" asp-for="Input.Email" class="form-control" placeholder="usuário/e-mail"  data-campo-selecionado="usuário/e-mail"/>
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-user fa-2x"></span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="form-group input-group mb-3">
+                        <input id="password" asp-for="Input.Email" class="form-control" placeholder="usuário/e-mail"  data-campo-selecionado="usuário/e-mail"/>
+                        <div class="input-group-append">
+                            <div class="input-group-text">
+                                <span class="fas fa-lock fa-2x"></span>
+                            </div>
+                        </div>
+                    </div>      
+                    <button class="btn btn-primary btn-lg btn-block w-100" type="submit" >Login</button>
+                  </form>
+                </div>
+              </div>
             </div>
-            <div class="row">
-                <div class="col-home-heading col menu-footer heading" onclick="openCity(event, 'Home')"></div>
-                <div class="col-product-heading col menu-footer" onclick="openCity(event, 'Produto')"></div>
-                <div class="col-cart-heading col menu-footer" onclick="openCity(event, 'Venda')"></div>
-                <div class="col-payment-heading col menu-footer" onclick="openCity(event, 'Pagamento')"></div>
-                <div class="col-settings-heading col menu-footer" onclick="openCity(event, 'Configuracao')"></div>
-                <div class="col-user-heading col menu-footer" onclick="openCity(event, 'Perfil')"></div>                
-            </div>
-                
+          </div>
         </div>
-
-
-    </div>
+        
+      </section>
     
     
     <script src="js/site.events.js"></script>
     <script src="js/site.functions.js"></script>    
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script>openCity(event, 'Home')</script>
+    
 </body>
 </html>
+
+
