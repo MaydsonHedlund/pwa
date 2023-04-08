@@ -2,6 +2,26 @@
 <html lang="en">
 
 <head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> </title>
+    <meta name="msapplication-TileColor" content="#af0a1a">
+    <meta name="theme-color" content="#ffffff">
+    <!--<link rel="shortcut icon" href="img/fav-16.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/fav-32.png">-->
+    <link rel="icon" type="image/png" sizes="16x16" href="img/fav-16.png">
+    <link rel="apple-touch-icon" href="img/fav-57.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/fav-114.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/fav-72.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/fav-144.png">
+    <link rel="manifest" href="pwa-manifest.json">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css" >
+
+
+
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
 
@@ -72,7 +92,7 @@
             </ul>
           </li>
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="#about">Get Started</a></li>
+          <li><a id="install" class="getstarted scrollto" href="#">Instalar</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -86,10 +106,10 @@
     <div class="container">
       <div class="row">
         <div class="col-lg-6 d-flex flex-column justify-content-center pt-4 pt-lg-0 order-2 order-lg-1" data-aos="fade-up" data-aos-delay="200">
-          <h1>Better Solutions For Your Business</h1>
+          <h1>Melhores soluções para o seu negócio</h1>
           <h2>We are team of talented designers making websites with Bootstrap</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#about" class="btn-get-started scrollto">Get Started</a>
+            <a href="#about" id="install2" class="btn-get-started scrollto">Instalar</a>
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div>
         </div>
@@ -833,6 +853,38 @@
 
   <!-- Template Main JS File -->
   <script src="assets/js/main.js"></script>
+
+
+<script>
+  let deferredPrompt;
+const installButton = document.querySelector('#install');
+
+window.addEventListener('beforeinstallprompt', (event) => {
+  // Previne que o prompt de instalação seja exibido automaticamente
+  event.preventDefault();
+  // Salva o evento para ser exibido posteriormente
+  deferredPrompt = event;
+  // Exibe o botão de instalação
+  installButton.style.display = 'block';
+});
+
+installButton.addEventListener('click', () => {
+  // Exibe o prompt de instalação
+  deferredPrompt.prompt();
+  // Aguarda a escolha do usuário
+  deferredPrompt.userChoice.then((choiceResult) => {
+    if (choiceResult.outcome === 'accepted') {
+      console.log('Usuário aceitou a instalação');
+    } else {
+      console.log('Usuário recusou a instalação');
+    }
+    // Limpa a variável para evitar futuras chamadas desnecessárias
+    deferredPrompt = null;
+    // Oculta o botão de instalação
+    installButton.style.display = 'none';
+  });
+});
+</script>
 
 </body>
 
