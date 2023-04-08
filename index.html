@@ -8,7 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> </title>
     <meta name="msapplication-TileColor" content="#af0a1a">
-    <meta name="theme-color" content="#ffffff">
+    <meta name="theme-color" content="#49A5B0">
     <!--<link rel="shortcut icon" href="img/fav-16.png">
     <link rel="icon" type="image/png" sizes="32x32" href="img/fav-32.png">-->
     <link rel="icon" type="image/png" sizes="16x16" href="img/fav-16.png">
@@ -862,7 +862,35 @@
   //const installButton = document.querySelector('#install');
   const installButton = document.querySelector('#install');
 
-console.log(installButton);
+  if ('getInstalledRelatedApps' in window.navigator) {
+
+    console.log("Aqui")
+  window.navigator.getInstalledRelatedApps()
+    .then(function (apps) {
+
+      console.log(apps);
+
+      var isInstalled = apps.some(function (app) { 
+
+        return app.name === 'SmartCommerceMobile';
+      });
+      if (isInstalled) {
+        // PWA está instalado, mas não está em execução standalone
+        console.log("MeuPWA está instalado no dispositivo.");
+      } else {
+        // PWA não está instalado
+        console.log("MeuPWA não está instalado no dispositivo.");
+      }
+    })
+    .catch(function (error) {
+      console.log('Erro ao verificar aplicativos instalados: ', error);
+    });
+} else {
+  // O navegador não suporta a API getInstalledRelatedApps
+  console.log('A API getInstalledRelatedApps não é suportada neste navegador.');
+}
+
+
 
   window.addEventListener('beforeinstallprompt', (event) => {
     // Previne que o prompt de instalação seja exibido automaticamente
