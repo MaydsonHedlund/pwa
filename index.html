@@ -111,7 +111,7 @@
           <h1>Melhores soluções para o seu negócio</h1>
           <h2>Solução completamente integrada e definitiva para varejo</h2>
           <div class="d-flex justify-content-center justify-content-lg-start">
-            <a href="#" class="btn-get-started scrollto">Instalar</a>
+            <a href="#" id="install" class="btn-get-started">Instalar</a>
             <a href="https://www.youtube.com/watch?v=jDDaplaOz7Q" class="glightbox btn-watch-video"><i class="bi bi-play-circle"></i><span>Watch Video</span></a>
           </div>
         </div>
@@ -859,7 +859,10 @@
 
 <script>
   let deferredPrompt;
+  //const installButton = document.querySelector('#install');
   const installButton = document.querySelector('#install');
+
+console.log(installButton);
 
   window.addEventListener('beforeinstallprompt', (event) => {
     // Previne que o prompt de instalação seja exibido automaticamente
