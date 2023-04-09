@@ -72,3 +72,55 @@ function openCity(evt, cityName) {
         console.log(error)
     }
   }
+
+
+  function AbrirTelaSacola() {
+    try {
+      
+      let element = document.getElementsByClassName("col-cart")[0];
+      element.click();
+
+    } catch (error) {
+      console.log(error)
+    }
+
+  }
+
+
+  function AbrirTelaPagamento() {
+    try {
+      
+      let element = document.getElementsByClassName("col-payment")[0];
+      element.click();
+
+    } catch (error) {
+      console.log(error)
+    }
+
+  }
+
+
+  function AbrirTelaFiscal() {
+    try {
+      
+      let element = document.getElementsByClassName("col-fiscal")[0];
+      element.click();
+
+    } catch (error) {
+      console.log(error)
+    }
+
+  }
+
+
+  function AbrirTelaInicial() {
+    try {
+      
+      let element = document.getElementsByClassName("col-home")[0];
+      element.click();
+
+    } catch (error) {
+      console.log(error)
+    }
+
+  }

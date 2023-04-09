@@ -116,6 +116,14 @@ a {
   background-color: #ddd;
 }
 
+.trash-sacola{
+    color: #DC3545;
+  }
+
+  .trash-sacola:hover{
+    color: #DC3545;
+  }
+
 /* Create an active/current tablink class */
 .tab button.active {
   background-color: #000;
@@ -149,3 +157,4 @@ a {
 .no-decoration{
     text-decoration: none !important;
 }
+
