@@ -124,6 +124,12 @@ a {
     color: #DC3545;
   }
 
+
+  .menu-util:hover{
+    color: #1F1F27;
+  }
+
+
 /* Create an active/current tablink class */
 .tab button.active {
   background-color: #000;
