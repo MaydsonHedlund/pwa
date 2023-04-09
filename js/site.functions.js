@@ -66,7 +66,7 @@ function openCity(evt, cityName) {
       }
     
       let element = document.getElementsByClassName("col-identity")[0];
-      element.onclick();
+      element.click();
 
     } catch (error) {
         console.log(error)
