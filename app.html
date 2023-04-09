@@ -47,13 +47,17 @@
 </head>
 <body>
     
+    <nav class="bg-dark">
+        <div class="bg-dark pl-4 pt-3">SmartCommerceMobile</div>        
+    </nav>
+
     <div class="menu-top fixed-bottom bg-dark">
         <div class="row p-0 m-0">
-            <a href="#" class="col-home menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-activate" onclick="openCity(event, 'Home')"><i class="text-center fs-30 las la-home"></i></a>
-            <a href="#" class="col-identity sale menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Identificacao')"><i class="text-center fs-30 las la-user-check"></i></a>
-            <a href="#" class="col-cart sale menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Venda')"><i class="text-center fs-35 las la-shopping-cart"></i></a>
-            <a href="#" class="col-payment sale menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Pagamento')"><i class="text-center fs-35 lar la-credit-card"></i></a>
-            <a href="#" class="col-fiscal sale menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Configuracao')"><i class="text-center fs-35 las la-receipt"></i></a>
+            <a href="#" class="col-home menu-footer col p-0 m-0 mt-2 text-center menu-activate" onclick="openCity(event, 'Home')"><i class="text-center fs-25 las la-home"></i></a>
+            <a href="#" class="col-identity sale menu-footer col p-0 m-0 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Identificacao')"><i class="text-center fs-25 las la-user-check"></i></a>
+            <a href="#" class="col-cart sale menu-footer col p-0 m-0 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Venda')"><i class="text-center fs-25 las la-shopping-cart"></i></a>
+            <a href="#" class="col-payment sale menu-footer col p-0 m-0 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Pagamento')"><i class="text-center fs-25 lar la-credit-card"></i></a>
+            <a href="#" class="col-fiscal sale menu-footer col p-0 m-0 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Configuracao')"><i class="text-center fs-25 las la-receipt"></i></a>
             <!--<a href="#" class="col-user menu-footer col p-0 m-0 mb-2 mt-1 text-center menu-deactivate" onclick="openCity(event, 'Perfil')"><i class="text-center fs-35 las la-user"></i></a> -->
         </div>
         
@@ -79,7 +83,7 @@
             <div class="row col-12 p-0 m-0">
                 <div class="col-6">
                     <!-- small box -->
-                    <a href="#" class="small-box bg-danger" onclick="NovaVenda(event)">
+                    <a href="#" class="small-box bg-danger" onclick="NovaVenda()">
                         <div class="inner text-center">
                             <i class="las la-cart-plus fa-3x"></i>
                         </div>
@@ -129,37 +133,67 @@
         <div class="content">
             
             <section>
+
                 <div class="row d-flex justify-content-center">                  
                     <div class="col-12">
-                      <div class="card card-secondary">
-                        <div class="card-header">
-                          <h3 class="card-title">Identificação do Cliente</h3>
-            
-                          <div class="card-tools">
-                            <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
-                              <i class="fas fa-minus"></i></button>
-                          </div>
+                        <div class="card card-dark">
+                            <div class="card-header">
+                                <h3 class="card-title">Identificação Vendedor</h3>                
+                                <div class="card-tools">
+                                    <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                                    <i class="fas fa-minus"></i></button>
+                                </div>
+                            </div>
+                            <div class="card-body">
+                                <div class="form-group">                                    
+                                    <select class="form-control">
+                                      <option>Vendedor 1</option>
+                                      <option>Vendedor 2</option>
+                                      <option>Vendedor 3</option>
+                                      <option>Vendedor 4</option>
+                                      <option>Vendedor 5</option>
+                                    </select>
+                                  </div>
+                            </div>
+                            <!-- /.card-body -->
                         </div>
-                        <div class="card-body">
-                          <div class="form-group">
-                            <label for="inputEstimatedBudget">Digite o CPF/CNPJ</label>
-                            <input type="number" id="inputEstimatedBudget" class="form-control">
-                          </div>
-                          
-                          <div class="form-group">                            
-                            <input type="button" id="inputEstimatedDuration" class="btn btn-outline-secondary" value="Avançar" style="min-width: 90px;" onclick="AbrirTelaSacola()"/>
-                            <input type="button" id="inputEstimatedDuration" class="btn btn-outline-secondary" value="Pular" style="min-width: 90px;" onclick="AbrirTelaSacola()"/>
-                          </div>
-                        </div>
-                        <!-- /.card-body -->
-                      </div>
                       <!-- /.card -->
                     </div>
-                  </div>
+                </div>
+
+
+
+                <div class="row d-flex justify-content-center">                  
+                    <div class="col-12">
+                        <div class="card card-dark">
+                            <div class="card-header">
+                            <h3 class="card-title">Identificação do Cliente</h3>
+                
+                            <div class="card-tools">
+                                <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
+                                <i class="fas fa-minus"></i></button>
+                            </div>
+                            </div>
+                            <div class="card-body">
+                            <div class="form-group">
+                                <label for="inputEstimatedBudget">Digite o CPF/CNPJ</label>
+                                <input type="number" id="inputEstimatedBudget" class="form-control">
+                            </div>
+                            
+                            <div class="form-group">                            
+                                <input type="button" id="inputEstimatedDuration" class="btn btn-outline-secondary" value="Avançar" style="min-width: 90px;" onclick="AbrirTelaSacola()"/>
+                                <input type="button" id="inputEstimatedDuration" class="btn btn-outline-secondary" value="Pular" style="min-width: 90px;" onclick="AbrirTelaSacola()"/>
+                            </div>
+                            </div>
+                            <!-- /.card-body -->
+                        </div>
+                      <!-- /.card -->
+                    </div>
+                </div>
 
                 <div class="row d-flex justify-content-center">                  
                   <div class="col-12">
-                    <div class="card card-secondary collapsed-card">
+                    <div class="card card-dark collapsed-card">
                       <div class="card-header">
                         <h3 class="card-title">Cadastrar Cliente</h3>
           
@@ -203,7 +237,7 @@
             <section>
                 <div class="row d-flex justify-content-center">                  
                     <div class="col-12">
-                        <div class="card card-secondary">
+                        <div class="card card-dark">
                             <div class="card-header">
                                 <h3 class="card-title">Sacola</h3>                                                        
                             </div>
