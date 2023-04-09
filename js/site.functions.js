@@ -29,7 +29,7 @@ function openCity(evt, cityName) {
 
     elements = document.getElementsByClassName("sale")
 
-    if (cityName == "Home") {
+    if (cityName == "Home" || cityName == "Cancelar") {
 
       for (let index = 0; index < elements.length; index++) {
         const element = elements[index];
@@ -42,6 +42,8 @@ function openCity(evt, cityName) {
         element.classList.remove("invisible");
       }
     }
+
+    
 
   }
 

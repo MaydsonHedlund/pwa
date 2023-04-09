@@ -53,21 +53,23 @@
 
     <div class="menu-top fixed-bottom bg-dark">
         <div class="row p-0 m-0">
-            <a href="#" class="col-home menu-footer col p-0 m-0 mt-2 text-center menu-activate" onclick="openCity(event, 'Home')"><i class="text-center fs-25 las la-home"></i></a>
+            <a hidden href="#" class="col-home menu-footer col p-0 m-0 mt-2 text-center menu-activate" onclick="openCity(event, 'Home')"><i class="text-center fs-25 las la-home"></i></a>
             <a href="#" class="col-identity sale menu-footer col p-0 m-0 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Identificacao')"><i class="text-center fs-25 las la-user-check"></i></a>
             <a href="#" class="col-cart sale menu-footer col p-0 m-0 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Venda')"><i class="text-center fs-25 las la-shopping-cart"></i></a>
             <a href="#" class="col-payment sale menu-footer col p-0 m-0 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Pagamento')"><i class="text-center fs-25 lar la-credit-card"></i></a>
             <a href="#" class="col-fiscal sale menu-footer col p-0 m-0 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Configuracao')"><i class="text-center fs-25 las la-receipt"></i></a>
-            <!--<a href="#" class="col-user menu-footer col p-0 m-0 mb-2 mt-1 text-center menu-deactivate" onclick="openCity(event, 'Perfil')"><i class="text-center fs-35 las la-user"></i></a> -->
+            <a href="#" class="col-cancel sale menu-footer col p-0 m-0 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Home')"><i class="text-center fs-25 lar la-times-circle"></i></a>
+            
         </div>
         
         <div class="row p-0 m-0">
-            <a href="#" class="col-home-heading col menu-footer heading text-center fs-12" style="text-decoration: none;" onclick="openCity(event, 'Home')"><span class="col-home menu-footer menu-activate">Início</span></a>
+            <a hidden href="#" class="col-home-heading col menu-footer heading text-center fs-12" style="text-decoration: none;" onclick="openCity(event, 'Home')"><span class="col-home menu-footer menu-activate">Início</span></a>
             <a href="#" class="col-identity-heading sale col menu-footer text-center fs-12" style="text-decoration: none;" onclick="openCity(event, 'Identificacao')"><span class="col-identity menu-footer menu-deactivate">Identificação</span></a>
             <a href="#" class="col-cart-heading sale col menu-footer text-center fs-12 text-white" style="text-decoration: none;" onclick="openCity(event, 'Venda')"><span class="col-cart menu-footer menu-deactivate">Sacola</span></a>
             <a href="#" class="col-payment-heading sale col menu-footer text-center fs-12 text-white" style="text-decoration: none;" onclick="openCity(event, 'Pagamento')"><span class="col-payment menu-footer menu-deactivate">Pagamento</span></a>
             <a href="#" class="col-fiscal-heading sale col menu-footer text-center fs-12 text-white" style="text-decoration: none;" onclick="openCity(event, 'Configuracao')"><span class="col-fiscal menu-footer menu-deactivate">Fiscal</span></a>
-            <!--<a href="#"" class="col-user col menu-footer text-center fs-15 text-white" style="text-decoration: none;" onclick="openCity(event, 'Perfil')"><span class="col-user menu-footer menu-deactivate">Teste</span></a>-->
+            <a href="#" class="col-cancel-heading sale col menu-footer text-center fs-12 text-white" style="text-decoration: none;" onclick="openCity(event, 'Home')"><span class="col-fiscal menu-footer menu-deactivate">Cancelar</span></a>
+            
         </div>
        
     </div>
@@ -233,108 +235,123 @@
       </div>
       
     <div id="Venda" class="tabcontent">        
-        <div class="content">
-            <section>
-                <div class="row d-flex justify-content-center">                  
-                    <div class="col-12">
-                        <div class="card card-dark">
-                            <div class="card-header">
-                                <h3 class="card-title">Sacola</h3>                                                        
+        <div class="content mt-3">
+            <h3 class="text-center mb-3">Sacola</h3>
+
+            
+
+            <div class="row col-12">
+                
+                <div class="form-group mb-3">                                    
+                    <input type="number" id="inputEstimatedBudget" class="form-control " placeholder="Ler/Digitar Código de barras">
+                </div>
+
+                <div class="form-group">                            
+                    <input type="button" id="inputEstimatedDuration" class="btn btn-outline-secondary w-100 mb-3" value="Pagamento" style="min-width: 90px;" onclick="AbrirTelaPagamento()"/>
+                </div>
+
+                <div>
+
+                    <div class="form-group m-0 mb-2">                            
+                        <div class="callout callout-dark p-0 m-0 ">
+                            <div class="row col-12">
+                                <div class="col-1 d-flex align-items-center fs-15">
+                                    <div>1</div>
+                                </div>
+                                <div class="col-2 d-flex align-items-center p-0 m-0">
+                                    <a href="#" onclick="AbrirFoto()" ><img id="img" src="https://kallan.vteximg.com.br/arquivos/ids/323681-1140-1140/75010012_001_1-CHINELO-FEM-HAV-SLIM-NEON-GLOW-4147338.jpg?v=637933252824070000" style="height: 60px;"/></a>
+                                </div>
+                                <div class="col-8 p-0 m-0">
+                                    <div><span class="fs-10">CHINELO HAVAIANAS SLIM NEON GLOW</span></div>
+                                    <div><span class="fs-10">REF: 75010012_001</span></div>
+                                    <div><span class="text-danger fs-10" style="padding-right: 10px;">De R$ 59,99</span><span class="text-black">R$ 47,99</span></div>
+                                </div>
+                                <div class="col-1 d-flex align-items-center p-0 m-0">
+                                    <div><a href="#"><i class="lar la-times-circle fa-2x trash-sacola" ></i></a></div>
+                                </div>
                             </div>
-                            <div class="card-body">
                                 
-                                <div class="form-group mb-3">                                    
-                                    <input type="number" id="inputEstimatedBudget" class="form-control " placeholder="Ler/Digitar Código de barras">
-                                </div>
-
-                                <div class="form-group">                            
-                                    <input type="button" id="inputEstimatedDuration" class="btn btn-outline-secondary w-100 mb-3" value="Pagamento" style="min-width: 90px;" onclick="AbrirTelaPagamento()"/>
-                                </div>
-
-
-                                <div class="callout callout-info p-0 m-0">
-                                    <div class="row col-12 p-0 m-2">
-                                        
-                                        <div class="col-2 d-flex align-items-center">
-                                            <div id="" ><a href="#" onclick="AbrirFoto()" style="padding-right:15px !important;"><img id="img" src="https://static.netshoes.com.br/produtos/chinelo-havaianas-top-lagomania-2/12/D53-2160-012/D53-2160-012_zoom1.jpg?ts=1662403440&ims=120x" style="height: 60px;"/></a></div>
-                                        </div>
-                                        <div class="col-8">
-                                            <div><span class="fs-10">Chinelo Slim Palet Glow</span></div>
-                                            <div><span class="fs-10">192499684820 - 39/40</span></div>
-                                            <div><span class="text-danger fs-10" style="padding-right: 10px;">De R$ 59,99</span><span class="text-black">R$ 47,99</span></div>
-                                        </div>
-                                        <div class="col-2 d-flex align-items-center">
-                                            <div><a href="#"><i class="las la-trash fa-2x trash-sacola" ></i></a></div>
-                                        </div>
-                                    </div>
-                                        
-                                </div>
-                                
-                                <div class="callout callout-info p-0 m-0">
-                                    <div class="row col-12 p-0 m-2">
-                                        
-                                        <div class="col-2 d-flex align-items-center">
-                                            <div id="" ><a href="#" onclick="AbrirFoto()" style="padding-right:15px !important;"><img id="img" src="https://static.netshoes.com.br/produtos/chinelo-havaianas-top-lagomania-2/12/D53-2160-012/D53-2160-012_zoom1.jpg?ts=1662403440&ims=120x" style="height: 60px;"/></a></div>
-                                        </div>
-                                        <div class="col-8">
-                                            <div><span class="fs-10">Chinelo Slim Palet Glow</span></div>
-                                            <div><span class="fs-10">192499684820 - 39/40</span></div>
-                                            <div><span class="text-danger fs-10" style="padding-right: 10px;">De R$ 59,99</span><span class="text-black">R$ 47,99</span></div>
-                                        </div>
-                                        <div class="col-2 d-flex align-items-center">
-                                            <div><a href="#"><i class="las la-trash fa-2x trash-sacola" ></i></a></div>
-                                        </div>
-                                    </div>
-                                        
-                                </div>
-                                <div class="callout callout-info p-0 m-0">
-                                    <div class="row col-12 p-0 m-2">
-                                        
-                                        <div class="col-2 d-flex align-items-center">
-                                            <div id="" ><a href="#" onclick="AbrirFoto()" style="padding-right:15px !important;"><img id="img" src="https://static.netshoes.com.br/produtos/chinelo-havaianas-top-lagomania-2/12/D53-2160-012/D53-2160-012_zoom1.jpg?ts=1662403440&ims=120x" style="height: 60px;"/></a></div>
-                                        </div>
-                                        <div class="col-8">
-                                            <div><span class="fs-10">Chinelo Slim Palet Glow</span></div>
-                                            <div><span class="fs-10">192499684820 - 39/40</span></div>
-                                            <div><span class="text-danger fs-10" style="padding-right: 10px;">De R$ 59,99</span><span class="text-black">R$ 47,99</span></div>
-                                        </div>
-                                        <div class="col-2 d-flex align-items-center">
-                                            <div><a href="#"><i class="las la-trash fa-2x trash-sacola" ></i></a></div>
-                                        </div>
-                                    </div>
-                                        
-                                </div>
-
-                                <div class="callout callout-info p-0 m-0">
-                                    <div class="row col-12 p-0 m-2">
-                                        
-                                        <div class="col-2 d-flex align-items-center">
-                                            <div id="" ><a href="#" onclick="AbrirFoto()" style="padding-right:15px !important;"><img id="img" src="https://static.netshoes.com.br/produtos/chinelo-havaianas-top-lagomania-2/12/D53-2160-012/D53-2160-012_zoom1.jpg?ts=1662403440&ims=120x" style="height: 60px;"/></a></div>
-                                        </div>
-                                        <div class="col-8">
-                                            <div><span class="fs-10">Chinelo Slim Palet Glow</span></div>
-                                            <div><span class="fs-10">192499684820 - 39/40</span></div>
-                                            <div><span class="text-danger fs-10" style="padding-right: 10px;">De R$ 59,99</span><span class="text-black">R$ 47,99</span></div>
-                                        </div>
-                                        <div class="col-2 d-flex align-items-center">
-                                            <div><a href="#"><i class="las la-trash fa-2x trash-sacola" ></i></a></div>
-                                        </div>
-                                    </div>
-                                        
-                                </div>
-                                
-                                
-                                
-                            </div>                        
-                        </div>                      
+                        </div>                    
                     </div>
-                </div>          
-            </section>
+
+                    <div class="form-group m-0 mb-2">                            
+                        <div class="callout callout-dark p-0 m-0">
+                            <div class="row col-12">
+                                <div class="col-1 d-flex align-items-center fs-15">
+                                    <div>2</div>
+                                </div>
+                                <div class="col-2 d-flex align-items-center p-0 m-0">
+                                    <a href="#" onclick="AbrirFoto()" ><img id="img" src="https://kallan.vteximg.com.br/arquivos/ids/380014-1140-1140/36020116_004_1-MAS-SAPT-CASUAL-PEGADA-119904.jpg?v=638119206178230000" style="height: 60px;"/></a>
+                                </div>
+                                <div class="col-8 p-0 m-0">
+                                    <div><span class="fs-10">SAPATÊNIS PEGADA COURO CASUAL MARROM</span></div>
+                                    <div><span class="fs-10">REF: 36020116_004</span></div>
+                                    <div><span class="text-danger fs-10" style="padding-right: 10px;">De R$ 59,99</span><span class="text-black">R$ 47,99</span></div>
+                                </div>
+                                <div class="col-1 d-flex align-items-center p-0 m-0">
+                                    <div><a href="#"><i class="lar la-times-circle fa-2x trash-sacola" ></i></a></div>
+                                </div>
+                            </div>
+                                
+                        </div>                    
+                    </div>
+
+                    <div class="form-group m-0 mb-2">                            
+                        <div class="callout callout-dark p-0 m-0">
+                            <div class="row col-12">
+                                <div class="col-1 d-flex align-items-center fs-15">
+                                    <div>3</div>
+                                </div>
+                                <div class="col-2 d-flex align-items-center p-0 m-0">
+                                    <a href="#" onclick="AbrirFoto()" ><img id="img" src="https://kallan.vteximg.com.br/arquivos/ids/396341-1140-1140/01012159_001_1-FEMININO-ACE-BOLSA-CHENSON-3483197.jpg?v=638163990051270000" style="height: 60px;"/></a>
+                                </div>
+                                <div class="col-8 p-0 m-0">
+                                    <div><span class="fs-10">BOLSA CHENSON DUAS ALÇAS MARROM</span></div>
+                                    <div><span class="fs-10">REF: 01012159_001</span></div>
+                                    <div><span class="text-danger fs-10" style="padding-right: 10px;">De R$ 59,99</span><span class="text-black">R$ 47,99</span></div>
+                                </div>
+                                <div class="col-1 d-flex align-items-center p-0 m-0">
+                                    <div><a href="#"><i class="lar la-times-circle fa-2x trash-sacola" ></i></a></div>
+                                </div>
+                            </div>
+                                
+                        </div>                    
+                    </div>
+
+                    <div class="form-group m-0 mb-2">                            
+                        <div class="callout callout-dark p-0 m-0">
+                            <div class="row col-12">
+                                <div class="col-1 d-flex align-items-center fs-15">
+                                    <div>4</div>
+                                </div>
+                                <div class="col-2 d-flex align-items-center p-0 m-0">
+                                    <a href="#" onclick="AbrirFoto()" ><img id="img" src="https://kallan.vteximg.com.br/arquivos/ids/378371-1140-1140/51010231_001_1-ACE-ESP-MOCHILA-MF3452-CLIO.jpg?v=638108496264130000" style="height: 60px;"/></a>
+                                </div>
+                                <div class="col-8 p-0 m-0">
+                                    <div><span class="fs-10">MOCHILA CLIO ESPORTIVA SORTIDA</span></div>
+                                    <div><span class="fs-10">REF: 51010231_001</span></div>
+                                    <div><span class="text-danger fs-10" style="padding-right: 10px;">De R$ 59,99</span><span class="text-black">R$ 47,99</span></div>
+                                </div>
+                                <div class="col-1 d-flex align-items-center p-0 m-0">
+                                    <div><a href="#"><i class="lar la-times-circle fa-2x trash-sacola" ></i></a></div>
+                                </div>
+                            </div>
+                                
+                        </div>                    
+                    </div>
+
+                </div>
+            </div>
+
+
+            
+
+            
         </div>
     </div>
       <div id="Pagamento" class="tabcontent">
         
-        <div class="content mt-5">
+        <div class="content mt-3">
             <h3 class="text-center mb-3">Como será o pagamento?</h3>
 
             <div class="row col-12">

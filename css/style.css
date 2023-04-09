@@ -138,6 +138,11 @@ a {
 
 }
 
+.callout-dark{
+    /*border-left-color: #343A40 !important;*/
+    border-left-color: gray
+}
+
 /* Style the tab content */
 .tabcontent {
   display: none;
