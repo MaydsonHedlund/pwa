@@ -17,6 +17,7 @@
     <link rel="manifest" href="pwa-manifest.json">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/bootstrap.min.css" >
+    <link rel="stylesheet" href="css/adminlte.min.css" >
 
 
     <link rel="stylesheet" href="icons/css/line-awesome.css">
@@ -46,7 +47,7 @@
 </head>
 <body>
     
-    <div class="menu-top ">
+    <div class="menu-top bg-dark">
         <div class="row p-0 m-0">
             <a href="#" class="col-home menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-activate" onclick="openCity(event, 'Home')"><i class="text-center fs-30 las la-home"></i></a>
             <a href="#" class="col-product menu-footer col p-0 m-0 mb-1 mt-2 text-center menu-deactivate" onclick="openCity(event, 'Produto')"><i class="text-center fs-30 las la-user-check"></i></a>
@@ -57,11 +58,11 @@
         </div>
         
         <div class="row p-0 m-0">
-            <a href="#"" class="col-home-heading col menu-footer heading text-center fs-12" style="text-decoration: none;" onclick="openCity(event, 'Home')"><span class="col-home menu-footer menu-activate">Início</span></a>
-            <a href="#"" class="col-product-heading col menu-footer text-center fs-12" style="text-decoration: none;" onclick="openCity(event, 'Produto')"><span class="col-product menu-footer menu-deactivate">Identificação</span></a>
-            <a href="#"" class="col-cart-heading col menu-footer text-center fs-12 text-white" style="text-decoration: none;" onclick="openCity(event, 'Venda')"><span class="col-cart menu-footer menu-deactivate">Sacola</span></a>
-            <a href="#"" class="col-payment-heading col menu-footer text-center fs-12 text-white" style="text-decoration: none;" onclick="openCity(event, 'Pagamento')"><span class="col-payment menu-footer menu-deactivate">Pagamento</span></a>
-            <a href="#"" class="col-fiscal-heading col menu-footer text-center fs-12 text-white" style="text-decoration: none;" onclick="openCity(event, 'Configuracao')"><span class="col-fiscal menu-footer menu-deactivate">Fiscal</span></a>
+            <a href="#" class="col-home-heading col menu-footer heading text-center fs-12" style="text-decoration: none;" onclick="openCity(event, 'Home')"><span class="col-home menu-footer menu-activate">Início</span></a>
+            <a href="#" class="col-product-heading col menu-footer text-center fs-12" style="text-decoration: none;" onclick="openCity(event, 'Produto')"><span class="col-product menu-footer menu-deactivate">Identificação</span></a>
+            <a href="#" class="col-cart-heading col menu-footer text-center fs-12 text-white" style="text-decoration: none;" onclick="openCity(event, 'Venda')"><span class="col-cart menu-footer menu-deactivate">Sacola</span></a>
+            <a href="#" class="col-payment-heading col menu-footer text-center fs-12 text-white" style="text-decoration: none;" onclick="openCity(event, 'Pagamento')"><span class="col-payment menu-footer menu-deactivate">Pagamento</span></a>
+            <a href="#" class="col-fiscal-heading col menu-footer text-center fs-12 text-white" style="text-decoration: none;" onclick="openCity(event, 'Configuracao')"><span class="col-fiscal menu-footer menu-deactivate">Fiscal</span></a>
             <!--<a href="#"" class="col-user col menu-footer text-center fs-15 text-white" style="text-decoration: none;" onclick="openCity(event, 'Perfil')"><span class="col-user menu-footer menu-deactivate">Teste</span></a>-->
         </div>
        
@@ -74,7 +75,75 @@
         </nav>
         -->
         <div class="content">
-            <p>Tela Home</p>
+            
+            <div class="row">
+                <div class="col">
+                    <!-- small box -->
+                    <a href="#" class="small-box bg-danger" onclick="AbrirModalConfiguracoes()">
+                        <div class="inner">
+                            <h3>&nbsp</h3>
+                            <p class="p-0 m-0">Nova venda</p>
+                            <p class="p-0 m-0">&nbsp;</p>
+                        </div>
+                        <div class="icon">
+                            <i class="las la-cart-plus"></i>
+                        </div>
+                        <div href="#" class="small-box-footer">&nbsp;</div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <!-- small box -->
+                    <a href="#" class="small-box bg-purple" onclick="AbrirModalConfiguracoes()">
+                        <div class="inner">
+                            <h3>&nbsp</h3>
+                            <p class="p-0 m-0">Caixa</p>
+                            <p class="p-0 m-0">&nbsp;</p>
+                        </div>
+                        <div class="icon">
+                            <i class="las la-tools"></i>
+                        </div>
+                        <div href="#" class="small-box-footer">&nbsp;</div>
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col">
+                    <!-- small box -->
+                    <a href="#" class="small-box bg-dark" onclick="AbrirModalConfiguracoes()">
+                        <div class="inner">
+                            <h3>&nbsp</h3>
+                            <p class="p-0 m-0">Configurações</p>
+                            <p class="p-0 m-0">&nbsp;</p>
+                        </div>
+                        <div class="icon">
+                            <i class="las la-tools"></i>
+                        </div>
+                        <div href="#" class="small-box-footer">&nbsp;</div>
+                    </a>
+                </div>
+
+                <div class="col">
+                    <!-- small box -->
+                    <a href="#" class="small-box bg-warning" onclick="AbrirModalConfiguracoes()">
+                        <div class="inner">
+                            <h3>&nbsp</h3>
+                            <p class="p-0 m-0">Outros</p>
+                            <p class="p-0 m-0">&nbsp;</p>
+                        </div>
+                        <div class="icon">
+                            <i class="las la-tools"></i>
+                        </div>
+                        <div href="#" class="small-box-footer">&nbsp;</div>
+                    </a>
+                </div>
+            </div>
+
+            
+
+            
+
         </div>
         
 
@@ -192,6 +261,7 @@
     <script src="js/site.events.js"></script>
     <script src="js/site.functions.js"></script>    
     <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/adminlte.min.js"></script>
     <script>openCity(event, 'Home')</script>
 </body>
 </html>
