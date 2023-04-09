@@ -24,13 +24,31 @@ document.addEventListener("DOMContentLoaded", function (event) {
             
             let classElementTarget = this.classList[0].replace("-heading","");
 
-            let element = document.getElementsByClassName(classElementTarget)[0];
+            //console.log(document.getElementsByClassName(classElementTarget))
+//
+            //let element = document.getElementsByClassName(classElementTarget)[0];
+//
+            //element.classList.remove("menu-deactivate");
+            //element.classList.add("menu-activate");
+            //document.getElementsByClassName(element.classList[0] + "-heading")[0].classList.add("heading")
+            //document.getElementsByClassName(element.classList[0] + "-heading")[0].classList.remove("menu-activate")
+            //document.getElementsByClassName(element.classList[0] + "-heading")[0].classList.remove("menu-deactivate")
 
-            element.classList.remove("menu-deactivate");
-            element.classList.add("menu-activate");
-            document.getElementsByClassName(element.classList[0] + "-heading")[0].classList.add("heading")
-            document.getElementsByClassName(element.classList[0] + "-heading")[0].classList.remove("menu-activate")
-            document.getElementsByClassName(element.classList[0] + "-heading")[0].classList.remove("menu-deactivate")
+
+            let element = document.getElementsByClassName(classElementTarget);
+
+            for (let i = 0; i < element.length; i++) {
+                
+                element[i].classList.remove("menu-deactivate");
+                element[i].classList.add("menu-activate");
+                document.getElementsByClassName(element[i].classList[0] + "-heading")[0].classList.add("heading")
+                document.getElementsByClassName(element[i].classList[0] + "-heading")[0].classList.remove("menu-activate")
+                document.getElementsByClassName(element[i].classList[0] + "-heading")[0].classList.remove("menu-deactivate")
+
+            }
+
+            
+
 
         });
     }
