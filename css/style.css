@@ -5,8 +5,8 @@ a {
 }
 
 .content {
-    padding-left: 10px;;
-    margin-top: 90px;
+    
+    margin-top: 10px;
 }
 
 .reload-btn {
@@ -116,8 +116,6 @@ a {
 /* Create an active/current tablink class */
 .tab button.active {
   background-color: #000;
-  
-
   border-bottom: 2px solid red;
   width:100%;
 
@@ -139,9 +137,10 @@ a {
     
 }
 
-.menu-bottom{
+.menu-top{
     background-color: #49A5B0;
     text-decoration: none;
+    padding-top: 20px;
 }
 
 .no-decoration{
