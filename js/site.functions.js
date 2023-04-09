@@ -54,7 +54,7 @@ function openCity(evt, cityName) {
   }
 
 
-  function NovaVenda(event) {
+  function NovaVenda() {
     try {
       
 
@@ -118,6 +118,7 @@ function openCity(evt, cityName) {
       
       let element = document.getElementsByClassName("col-home")[0];
       element.click();
+      
 
     } catch (error) {
       console.log(error)
