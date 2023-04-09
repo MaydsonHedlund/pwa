@@ -22,12 +22,52 @@ function openCity(evt, cityName) {
       tablinks[i].className = tablinks[i].className.replace(" active", "");
     }
     document.getElementById(cityName).style.display = "block";
-    evt.currentTarget.className += " active";
+
+    if (evt != undefined) {
+      evt.currentTarget.className += " active";
+    }
+
+    elements = document.getElementsByClassName("sale")
+
+    if (cityName == "Home") {
+
+      for (let index = 0; index < elements.length; index++) {
+        const element = elements[index];
+        element.classList.add("invisible");
+      }
+    }
+    else{
+      for (let index = 0; index < elements.length; index++) {
+        const element = elements[index];
+        element.classList.remove("invisible");
+      }
+    }
+
   }
 
   function EfetuarLogin(params) {
     try {
       window.location.href="app.html"
+    } catch (error) {
+        console.log(error)
+    }
+  }
+
+
+  function NovaVenda(event) {
+    try {
+      
+
+      elements = document.getElementsByClassName("sale")
+    
+      for (let index = 0; index < elements.length; index++) {
+        const element = elements[index];
+        element.classList.remove("invisible");
+      }
+    
+      let element = document.getElementsByClassName("col-identity")[0];
+      element.onclick();
+
     } catch (error) {
         console.log(error)
     }
