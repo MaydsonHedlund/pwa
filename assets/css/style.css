@@ -333,7 +333,7 @@ h6 {
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #37517e;
+  color: #47b2e4;
 }
 
 .navbar-mobile a:hover,
@@ -345,7 +345,7 @@ h6 {
 .navbar-mobile .getstarted,
 .navbar-mobile .getstarted:focus {
   margin: 15px;
-  color: #37517e;
+  color: #47b2e4;
 }
 
 .navbar-mobile .dropdown ul {
@@ -657,7 +657,7 @@ section {
 .why-us .content h3 {
   font-weight: 400;
   font-size: 34px;
-  color: #37517e;
+  color: #47b2e4;
 }
 
 .why-us .content h4 {
@@ -782,7 +782,7 @@ section {
 .skills .content h3 {
   font-weight: 700;
   font-size: 32px;
-  color: #37517e;
+  color: #47b2e4;
   font-family: "Poppins", sans-serif;
 }
 
@@ -819,7 +819,7 @@ section {
   display: block;
   font-weight: 600;
   font-family: "Poppins", sans-serif;
-  color: #37517e;
+  color: #47b2e4;
 }
 
 .skills .progress .skill .val {
@@ -1638,7 +1638,7 @@ section {
 --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: #37517e;
+  background: #47b2e4;
 }
 
 #footer .footer-newsletter {

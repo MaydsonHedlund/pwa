@@ -65,9 +65,9 @@
         <div class="row p-0 m-0">
             <a hidden href="#" class="col-home-heading col menu-footer heading text-center fs-12" style="text-decoration: none;" onclick="openCity(event, 'Home')"><span class="col-home menu-footer menu-activate">Início</span></a>
             <a href="#" class="col-identity-heading sale col menu-footer text-center fs-12" style="text-decoration: none;" onclick="openCity(event, 'Identificacao')"><span class="col-identity menu-footer menu-deactivate">Identificação</span></a>
-            <a href="#" class="col-cart-heading sale col menu-footer text-center fs-12 text-white" style="text-decoration: none;" onclick="openCity(event, 'Venda')"><span class="col-cart menu-footer menu-deactivate">Sacola</span></a>
+            <a href="#" class="col-cart-heading sale col menu-footer text-center fs-12 text-white" style="text-decoration: none;" onclick="openCity(event, 'Venda')"><span class="col-cart menu-footer menu-deactivate">Compra</span></a>
             <a href="#" class="col-payment-heading sale col menu-footer text-center fs-12 text-white" style="text-decoration: none;" onclick="openCity(event, 'Pagamento')"><span class="col-payment menu-footer menu-deactivate">Pagamento</span></a>
-            <a href="#" class="col-fiscal-heading sale col menu-footer text-center fs-12 text-white" style="text-decoration: none;" onclick="openCity(event, 'Configuracao')"><span class="col-fiscal menu-footer menu-deactivate">Fiscal</span></a>
+            <a href="#" class="col-fiscal-heading sale col menu-footer text-center fs-12 text-white" style="text-decoration: none;" onclick="openCity(event, 'Configuracao')"><span class="col-fiscal menu-footer menu-deactivate">Finalizar</span></a>
             <a href="#" class="col-cancel-heading sale col menu-footer text-center fs-12 text-white" style="text-decoration: none;" onclick="openCity(event, 'Home')"><span class="col-fiscal menu-footer menu-deactivate">Cancelar</span></a>
             
         </div>
@@ -131,69 +131,38 @@
     </div>
       
       <div id="Identificacao" class="tabcontent">
-        
-        <div class="content">
+       
+        <div class="content mt-3">
             
             <section>
 
-                <div class="row p-0 m-0 d-flex justify-content-center">                  
-                    <div class="col-12">
-                        <div class="card card-light">
-                            <div class="card-header">
-                                <h3 class="card-title">Identificação Vendedor</h3>                
-                                <div class="card-tools">
-                                    <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
-                                    <i class="fas fa-minus"></i></button>
-                                </div>
-                            </div>
-                            <div class="card-body">
-                                <div class="form-group">                                    
-                                    <select class="form-control">
-                                      <option>Vendedor 1</option>
-                                      <option>Vendedor 2</option>
-                                      <option>Vendedor 3</option>
-                                      <option>Vendedor 4</option>
-                                      <option>Vendedor 5</option>
-                                    </select>
-                                  </div>
-                            </div>
-                            <!-- /.card-body -->
+                <div class="content mt-3">
+                    <h3 class="text-center mb-3">Vendedor</h3>        
+                    <div class="row p-0 m-0 col-12">
+                        <div class="form-group p-0 m-0">                                    
+                            <select class="form-control">
+                              <option>Vendedor 1</option>
+                              <option>Vendedor 2</option>
+                              <option>Vendedor 3</option>
+                              <option>Vendedor 4</option>
+                              <option>Vendedor 5</option>
+                            </select>
                         </div>
-                      <!-- /.card -->
                     </div>
-                </div>
 
-
-
-                <div class="row p-0 m-0 d-flex justify-content-center">                  
-                    <div class="col-12">
-                        <div class="card card-dark">
-                            <div class="card-header">
-                            <h3 class="card-title">Identificação do Cliente</h3>
-                
-                            <div class="card-tools">
-                                <button type="button" class="btn btn-tool" data-card-widget="collapse" data-toggle="tooltip" title="Collapse">
-                                <i class="fas fa-minus"></i></button>
-                            </div>
-                            </div>
-                            <div class="card-body">
-                            <div class="form-group">
-                                <label for="inputEstimatedBudget">Digite o CPF/CNPJ</label>
-                                <input type="number" id="inputEstimatedBudget" class="form-control">
-                            </div>
-                            
-                            <div class="form-group">                            
-                                <input type="button" id="inputEstimatedDuration" class="btn btn-outline-secondary" value="Avançar" style="min-width: 90px;" onclick="AbrirTelaSacola()"/>
-                                <input type="button" id="inputEstimatedDuration" class="btn btn-outline-secondary" value="Pular" style="min-width: 90px;" onclick="AbrirTelaSacola()"/>
-                            </div>
-                            </div>
-                            <!-- /.card-body -->
-                        </div>
-                      <!-- /.card -->
+                    <h3 class="text-center mb-3 mt-3">Cliente</h3>        
+                    <div class="row p-0 m-0 col-12">
+                        <div class="form-group p-0 m-0">                                                                
+                            <input type="number" id="inputEstimatedBudget" class="form-control" placeholder="CPF/CNPJ">
+                        </div>                        
                     </div>
-                </div>
+                    <div class="row p-0 m-0 d-flex justify-content-between mt-3">
+                        <input type="button" id="inputEstimatedDuration1" class="btn btn-outline-secondary col-5" value="Avançar" onclick="AbrirTelaSacola()"/>
+                        <input type="button" id="inputEstimatedDuration2" class="btn btn-outline-secondary col-5" value="Pular" onclick="AbrirTelaSacola()"/>                            
+                    </div>
+                <div>
 
-                <div class="row d-flex justify-content-center">                  
+                <div class="row d-flex justify-content-center mt-5">                  
                   <div class="col-12">
                     <div class="card card-dark collapsed-card">
                       <div class="card-header">
@@ -235,10 +204,9 @@
       </div>
       
     <div id="Venda" class="tabcontent">        
-        <div class="content mt-3">
-            <h3 class="text-center mb-3">Sacola</h3>
 
-            
+        <div class="content mt-3">
+            <h3 class="text-center mb-3">Compra</h3>
 
             <div class="row p-0 m-0 col-12">
                 
