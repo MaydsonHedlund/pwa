@@ -31,16 +31,22 @@ function openCity(evt, cityName) {
 
     if (cityName == "Home" || cityName == "Cancelar") {
 
-      for (let index = 0; index < elements.length; index++) {
-        const element = elements[index];
-        element.classList.add("invisible");
-      }
+      //for (let index = 0; index < elements.length; index++) {
+      //  const element = elements[index];
+      //  element.classList.add("invisible");
+      //}
+      element = document.getElementsByClassName("fixed-bottom")[0]
+      element.classList.add("invisible");
+      
+
     }
     else{
-      for (let index = 0; index < elements.length; index++) {
-        const element = elements[index];
-        element.classList.remove("invisible");
-      }
+      //for (let index = 0; index < elements.length; index++) {
+      //  const element = elements[index];
+      //  element.classList.remove("invisible");
+      //}
+      element = document.getElementsByClassName("fixed-bottom")[0]
+      element.classList.remove("invisible");
     }
 
     
