@@ -1,16 +1,10 @@
 
-const _BTN_MODAL_MENSAGEM_  = document.getElementById("btnModal");
-
-
 document.addEventListener("DOMContentLoaded", function (event) {
 	
-    _BTN_MODAL_MENSAGEM_.addEventListener('pointerdown', (event) => {			
-        
-        _SITE_.AbrirModalSite("Olá Mundo");
-    });
-
-
     var menuFooter = document.getElementsByClassName("menu-footer");
+
+    console.log("menuFooter")
+    console.log(menuFooter)
 
     for (var i = 0; i < menuFooter.length; i++) {
 
@@ -26,6 +20,8 @@ document.addEventListener("DOMContentLoaded", function (event) {
 
             let element = document.getElementsByClassName(classElementTarget);
 
+            console.log(element);
+
             for (let i = 0; i < element.length; i++) {
 
                 element[i].classList.remove("menu-deactivate");
@@ -37,7 +33,4 @@ document.addEventListener("DOMContentLoaded", function (event) {
             }
         });
     }
-
-    
-
 });
