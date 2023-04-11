@@ -11,6 +11,40 @@ _SITE_.AbrirModalSite = function (params) {
 }
 
 
+_SITE_.AbrirModalCadastroCliente = function (params) {    
+  try {        
+      
+      //$("#modalCadastroCliente").data('bs.modal')._config.backdrop = 'static';
+
+      console.log($("#modalCadastroCliente"));
+      $("#modalCadastroCliente").modal('show');
+      
+  } catch (error) {    
+      console.log(error)
+  }
+}
+
+_SITE_.CadastrarCliente = function () {    
+  try {        
+      AbrirTelaSacola();
+      
+      $("#modalCadastroCliente").modal('hide');
+  } catch (error) {    
+      console.log(error)
+  }
+}
+
+_SITE_.CancelarCadastrarCliente = function () {    
+  try {        
+      
+      
+      $("#modalCadastroCliente").modal('hide');
+  } catch (error) {    
+      console.log(error)
+  }
+}
+
+
 function openCity(evt, cityName) {
     var i, tabcontent, tablinks;
     tabcontent = document.getElementsByClassName("tabcontent");

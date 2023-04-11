@@ -143,6 +143,11 @@ a {
     border-left-color: gray
 }
 
+.quote-blue{
+    border-left: solid 12px #49A5B0 !important;
+}
+
+
 /* Style the tab content */
 .tabcontent {
   display: none;
@@ -169,3 +174,6 @@ a {
     text-decoration: none !important;
 }
 
+btn-w-min{
+    min-width: 90px !important;
+}
