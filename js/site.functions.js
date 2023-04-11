@@ -2,9 +2,10 @@ const _SITE_ = {}
 
 _SITE_.AbrirModalSite = function (params) {    
     try {        
+       
         $("#txtTextoMensagem").text(params);
-        let modal = new bootstrap.Modal(document.getElementById('modalMensagem'));
-        modal.show();            
+        $("#modalMensagem").modal('show');
+
     } catch (error) {    
         console.log(error)
     }
@@ -14,9 +15,6 @@ _SITE_.AbrirModalSite = function (params) {
 _SITE_.AbrirModalCadastroCliente = function (params) {    
   try {        
       
-      //$("#modalCadastroCliente").data('bs.modal')._config.backdrop = 'static';
-
-      console.log($("#modalCadastroCliente"));
       $("#modalCadastroCliente").modal('show');
       
   } catch (error) {    

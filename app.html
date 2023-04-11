@@ -393,7 +393,7 @@
                 <div class="col-6 m-0">
                   <div class="card elevation-2" style="min-height: 90px;">                    
                     <!-- /.card-header -->
-                    <div class="card-body row col-12" onclick="AbrirTelaFiscal()">
+                    <div class="card-body row col-12" onclick="_SITE_.AbrirModalSite('Pagamento Crédito')">
                         <div class="col-6"><span>Crédito</span></div>
                         <div class="col-6"><i class="text-center fs-35 lar la-credit-card menu-util"></i></div>                        
                     </div>
@@ -405,7 +405,7 @@
                 <div class="col-6 m-0">
                     <div class="card elevation-2" style="min-height: 90px;">                    
                       <!-- /.card-header -->
-                      <div class="card-body row col-12" onclick="AbrirTelaFiscal()">
+                      <div class="card-body row col-12" onclick="_SITE_.AbrirModalSite('Pagamento Débito')">
                           <div class="col-6"><span>Débito</span></div>
                           <div class="col-6"><i class="text-center fs-35 lar la-credit-card menu-util"></i></div>                        
                       </div>
@@ -417,7 +417,7 @@
                   <div class="col-6 m-0">
                     <div class="card elevation-2" style="min-height: 90px;">                    
                       <!-- /.card-header -->
-                      <div class="card-body row col-12" onclick="AbrirTelaFiscal()" >
+                      <div class="card-body row col-12" onclick="_SITE_.AbrirModalSite('Pagamento Kallan Card')">
                           <div class="col-6"><span>Kallan Card</span></div>
                           <div class="col-6"><i class="text-center fs-35 lar la-credit-card menu-util"></i></div>                        
                       </div>
@@ -430,7 +430,7 @@
                   <div class="col-6 m-0">
                     <div class="card elevation-2" style="min-height: 90px;">                    
                       <!-- /.card-header -->
-                      <div class="card-body row col-12" onclick="AbrirTelaFiscal()">
+                      <div class="card-body row col-12" onclick="_SITE_.AbrirModalSite('Pagamento Pix')">
                           <div class="col-6"><span>Pix</span></div>
                           <div class="col-6"><i class="text-center fs-35 las la-qrcode menu-util"></i></div>                        
                       </div>
@@ -515,36 +515,37 @@
 
             <div class="row p-0 m-0 col-12 mt-3">
                
-                <div class="col-6">
-                  <div class="card elevation-2">                    
-                    <!-- /.card-header -->
-                    <div class="card-body row col-12" onclick="AbrirTelaInicial()">
-                        <div class="col-12 text-center"><span>Impresso</span></div>
-                        <div class="col-12 text-center"><i class="fs-35 las la-print menu-util"></i></div>                        
-                    </div>
-                    <!-- /.card-body -->
-                  </div>
-                  <!-- /.card -->
-                </div>
 
-                <div class="col-6">
-                    <div class="card elevation-2">                    
+                <div class="col-6 m-0" >
+                    <div class="card elevation-2">
+                      
                       <!-- /.card-header -->
-                      <div class="card-body row col-12" onclick="AbrirTelaInicial()">
-                          <div class="col-12 text-center"><span>E-mail</span></div>
-                          <div class="col-12 text-center"><i class="fs-35 las la-envelope-open-text menu-util"></i></div>                        
+                      <div class="card-body p-0 m-0" onclick="AbrirTelaInicial()">
+                        <blockquote class="quote-secondary p-1 m-1 ">
+                            <div class="col-12 text-center"><span>Impresso</span></div>
+                            <div class="col-12 text-center"><i class="fs-35 las la-print menu-util"></i></div>
+                        </blockquote>
                       </div>
                       <!-- /.card-body -->
                     </div>
                     <!-- /.card -->
-                  </div>
+                </div>
 
-                  
-
-                
+                <div class="col-6 m-0" >
+                    <div class="card elevation-2">
+                      
+                      <!-- /.card-header -->
+                      <div class="card-body p-0 m-0" onclick="AbrirTelaInicial()">
+                        <blockquote class="p-1 m-1">
+                            <div class="col-12 text-center"><span>E-mail</span></div>
+                          <div class="col-12 text-center"><i class="fs-35 las la-envelope-open-text menu-util"></i></div>   
+                        </blockquote>
+                      </div>
+                      <!-- /.card-body -->
+                    </div>
+                    <!-- /.card -->
+                </div>
             </div>
-
-            
         </div>
 
 
@@ -616,12 +617,6 @@
                 </div>
             </div>
         </div>
-
-        
-          
-          
-
-
         
         <!--
         <div class="fixed-bottom menu-bottom">
