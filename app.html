@@ -514,7 +514,18 @@
     <script src="js/site.functions.js"></script>
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/adminlte.min.js"></script>
-    <script>openCity(event, 'Home');</script>
+    <script>
+    
+        openCity(event, 'Home');
+
+        const platform = navigator.platform.toLowerCase();
+
+        if ( !(platform.includes('android') || platform.includes('iphone') || platform.includes('ipad') || platform.includes('ipod') )) {
+            alert("O PWA não está sendo executado em um dispositivo móvel");
+        }
+        
+    
+    </script>
 
 </body>
 </html>
