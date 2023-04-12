@@ -521,10 +521,10 @@
         const platform = navigator.platform.toLowerCase();
 
         if ( !(platform.includes('android') || platform.includes('iphone') || platform.includes('ipad') || platform.includes('ipod') )) {
-            alert("O PWA não está sendo executado em um dispositivo móvel");
+            alert("O PWA não está sendo executado em um dispositivo móvel\n\rPlataforma: " + platform);
         }
         else{
-            alert("O PWA está sendo executado em um dispositivo móvel");
+            alert("O PWA está sendo executado em um dispositivo móvel\n\rPlataforma: " + platform);
         }
     
     </script>
