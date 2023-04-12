@@ -3,9 +3,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
 	
     var menuFooter = document.getElementsByClassName("menu-footer");
 
-    console.log("menuFooter")
-    console.log(menuFooter)
-
     for (var i = 0; i < menuFooter.length; i++) {
 
         menuFooter[i].addEventListener('click', function() {
@@ -19,8 +16,6 @@ document.addEventListener("DOMContentLoaded", function (event) {
             let classElementTarget = this.classList[0].replace("-heading","");
 
             let element = document.getElementsByClassName(classElementTarget);
-
-            console.log(element);
 
             for (let i = 0; i < element.length; i++) {
 
